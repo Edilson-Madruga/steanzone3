@@ -894,4 +894,16 @@ input {
     transform: translateX(-100px);
   }
 }
+.flutuando2{
+  margin-left: 10px;
+  /* margin-right: 50px; */
+  margin-top: -430px;
+
+}
+.figura2{
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+  animation: float 3s ease-in-out infinite;
+}
 }
