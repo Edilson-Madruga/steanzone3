@@ -12,7 +12,7 @@ body {
   height: 100vh;
   min-height: 100%;
   background: url('imagens.img/fundogeral.jpg'); 
-  background:  url(/imagens.img/fundo\ cod.jpg) center center no-repeat fixed;
+  background:  url(imagens.img/fundo\ cod.jpg) center center no-repeat fixed;
   background-size: cover;
 } 
 
