@@ -884,7 +884,7 @@ input {
   margin-top: 80px;
   margin-left: 50px;
   animation: flot 10s ease-in-out infinite;
-  
+  z-index: -101;
 }
 @keyframes flot {
   0%,100% {
