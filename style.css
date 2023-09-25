@@ -830,9 +830,9 @@ input {
 }
 .parte2 {
   margin-left: 10px;
-  margin-top: 290px;
+  margin-top: 500px;
   width: 350px;
-  height: 490px;
+  height: 600px;
 }
 .parte1 {
   margin-left: 10px;
@@ -877,15 +877,21 @@ input {
   margin-left: 110px;
   font-size: 30px;
   padding-bottom: 20px;
-
-  
-    
+}
+.figura1{
+  width: 400px;
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 50px;
+  animation: flot 10s ease-in-out infinite;
   
 }
-
-
-
- 
+@keyframes flot {
+  0%,100% {
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(-100px);
+  }
 }
-
-
+}
