@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "poppins", sans-serif;
+    }
+    
+    body{
+        background: url(/imagens.img/destaques\ \(9\).jpg);
+        
+    }
+    
+    .voltar2{
+        position: fixed;
+        margin: 50px;
+        font-size: 20px;
+        background: linear-gradient(90deg, #3730a3, #7e22ce);
+        padding: 12px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+    
+    .imginicio img{
+          width: 1940px;
+          margin:-20px;
+          height: 250px;
+    }

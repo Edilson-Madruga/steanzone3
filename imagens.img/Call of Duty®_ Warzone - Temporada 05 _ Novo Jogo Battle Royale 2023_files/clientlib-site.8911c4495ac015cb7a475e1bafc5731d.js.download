@@ -1,0 +1,20 @@
+(function() {
+
+    var init = function() {
+
+        $(".header-purchase-btn a, a.primary-button-js").hover(
+
+            function() {
+            	$(this).removeClass("hoverOut").addClass("hover");
+            },
+            function() {
+            	$(this).removeClass("hover").addClass("hoverOut");
+            }
+
+        );
+
+    };
+
+    $(init);
+
+})();

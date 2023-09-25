@@ -1,0 +1,68 @@
+(function() {
+
+    var init = function() {
+
+        $(".header-purchase-btn a, a.primary-button-js").hover(
+
+            function() {
+            	$(this).removeClass("hoverOut").addClass("hover");
+            },
+            function() {
+            	$(this).removeClass("hover").addClass("hoverOut");
+            }
+
+        );
+
+    };
+
+    $(init);
+
+})();
+
+(function() {
+
+
+    var init = function() {
+
+        $(window).on("load", function() {
+
+            // Figure out element to scroll to
+            var target = $(window.location.hash);
+            if(window.location.hash.length > 0) {
+            	target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+            }
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+
+                //Get fixed header height
+				var headerHeight = 180;
+
+                $("html, body").animate(
+                    {
+                        scrollTop: target.offset().top  - headerHeight,
+                    },
+                    1000,
+                    function () {
+                        //After scrolling, attemp to focus on element
+                        target.focus();
+    
+                        //If the target was focused
+                        if(target.is(":focus")) {
+                            return false;
+                        } else {
+                            target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                            target.focus(); // Set focus again
+                            $(window).scrollTop(target.offset().top - headerHeight - 20); //scroll back up to proper position
+                        }
+                    }
+                );
+            }
+
+        });
+    }
+
+    $(init);
+
+})();

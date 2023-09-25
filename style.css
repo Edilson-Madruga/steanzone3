@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  "poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  min-height: 100%;
+  background: url('imagens.img/fundogeral.jpg'); 
+  background:  url(/imagens.img/fundo\ cod.jpg) center center no-repeat fixed;
+  background-size: cover;
+} 
+
+.logotipo {
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 102;
+  padding-top: 80px;
+}
+
+.logotipo img {
+  width: 200px;
+} 
+
+.header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 151;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, .1);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+
+ /* passagem do branco na header */
+.header::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255, .4), transparent);
+  transition: .5s;
+} 
+
+.header:hover::after {
+  left: 100%;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+/* estiliza nome site */
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* estiliza navbar(menu) */
+.navbar a {
+  font-size: 1.15rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 2.5rem;
+  z-index: 101;
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+#check {
+  display: none;
+}
+
+/* estiliza os icones  hamburguer e fechar  */
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;            
+}
+
+@media(max-width:992px) {
+    .header {
+    padding: 1.3rem 5%;
+
+   }
+}
+@media(max-width: 768px) {
+    .icons {
+    display: inline-flex
+   }
+ 
+
+#check:checked~.icons #menu-icon {
+   display: none;
+  }
+.icons #close-icon {
+    display: none;
+  }
+
+#check:checked~.icons #close-icon {
+    display: block;
+  } 
+
+/* posicao da navbar,cor e transparencia ,descida do blur (transicao) hidden (apaga letras na transicao) */
+.navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, .1);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    box-shadow:  0.5rem 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+    transition: .3s;
+  }
+
+#check:checked~.navbar {
+    display: block;
+    height: 17.7rem;
+  }  
+
+  /* disposicao do menu tamanho e margin e centralizar texto */
+.navbar a {
+    display: block;
+    font-size:  1.1rem;
+    margin:  1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+/* faz a transicao e queda das palavras do navbar */
+#check:checked~.navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(.15s * var(--i));
+  }  
+} /*fim do css do header*/
+
+/* redes sociais */
+
+.social-icon {
+  position: fixed;
+  display:flex;
+  padding-top: 100px;
+  z-index: 130;
+}
+
+
+.social-icon a {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: transparent;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+  margin: 0 8px;
+  z-index: 1;
+  text-align: center;
+  line-height: 60px;
+  transition: .3s;
+}
+
+.social-icon a:hover {
+  background: #0ef;
+  transform: rotate(135deg);
+  box-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+}
+
+.social-icon a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 45px;
+  height: 45px;
+  background: #4e3f49;
+  z-index: -1;
+}
+
+.social-icon a i {
+  font-size: 18px;
+  color: #000;
+  transition: .3s;
+}
+
+.social-icon a:hover i {
+  transform: rotate(225deg);
+  color: #0ef;
+} 
+
+
+@media(max-width:500px){
+  .social-icon {
+    display: block ;
+    position: relative;
+  }
+}
+ /* fim do css dos icones de rede social */
+
+/* aqui comeca css do card */
+.cardgeral {
+    background:#726b647b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20PX ;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    height: 450px;
+    width: 1700px;
+    border-radius: 20px;
+    
+}
+
+.destaquesdomes .mes{
+    display: block;
+    background: rgba(11, 10, 10, 0.669);
+    opacity: 70%;
+    margin-left: 650px;
+    margin-right: 550px;
+    padding: 30px;
+    box-shadow: 0px 35px 50px rgba(57, 15, 15, 0.732);
+}
+/* ----------estilizacao do titulo (destaque do mes)------------ */
+.mes {
+  font-size: 30px;
+  -webkit-text-stroke: 3px rgb(129, 180, 184);
+  transition: background-position .3s, text-shadow 1s;
+}
+
+.mes:hover {
+  text-shadow: 
+      0 0 10px #0ef,
+      0 0 20px #0ef,
+      0 0 40px #0ef,
+      0 0 80px #0ef,
+      0 0 160px #0ef;
+}
+/* ---------fim da estilizacao do titulo-------- */
+
+/* --------------inicio do css da abertura -------------------- */
+.box{
+  width: 90%;
+  height: 90vh;
+  margin-left: 100px;
+}
+.box .clip{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ---------------------fim css da abertura -------------------------- */
+
+/* -------inicio da estilizacao do css do card principal----- */
+.card {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color: #e38f8f;
+    border-radius: 20px;
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.35);
+    transition: 0.5s;
+}
+
+.card:hover {
+    height: 400px;
+}
+
+.card .img-box {
+    position: relative;
+    width: 350px;
+    height: auto;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.card:hover .img-box {
+    top: -170px;
+    scale: 0.75;
+}
+
+.card .img-box img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 35px 70px rgba(0, 0, 0, 0.35);
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card .content p {
+  font-size: 18px;
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.card .Detalhes {
+   background: linear-gradient(90deg, #3730a3, #7e22ce);
+   padding: 12px;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 8px;
+   margin-bottom: 50px;
+}
+
+.content {
+    color: rgb(12, 12, 12);
+}
+/* -------------------------------------------------------------------- */
+/* css de proximo lançamentos */
+
+.parte2 p{
+  color: #fff;
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif
+}
+.parte2 {
+  position: absolute;
+  width: 45%;
+  height: 80%;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 900px;
+  flex-wrap: wrap;
+  border-radius: 0px 10px 10px 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar{
+  width: 60%;
+  height: 16px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #7c5413ea;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: #7e22ce6b;
+  border-radius: 10px;
+}
+
+
+.parte2 img {
+  display: flex;
+  width: 350px;
+  height: 200px;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+
+.fotinha {
+  display: flex;
+  justify-content:start ;
+  align-items:end;
+  width: 800px;
+  height: 230px;
+  overflow-x: scroll;
+}
+.fotinha p{
+  width: 400px;
+  position:absolute;
+  color: rgb(238, 198, 198);
+  font-size: 16px;
+  margin-left: 380px;
+  margin-bottom:  110px;
+}
+.fotinha a img{
+  width: 350px;
+  height: 200px;
+}
+.fotinha img {
+  flex-direction: column ;
+  width: 175px;
+  height: 100px;
+}
+
+
+
+
+
+.parte1 p{
+  color: #fff;
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif
+}
+.parte1 {
+  position: absolute;
+  background: red;
+  width: 45%;
+  height: 30%;
+  display: flex;
+  margin-top: 600px;
+  margin-left: 50px;
+  flex-wrap: wrap;
+  border-radius: 0px 10px 10px 10px;
+}
+
+.parte4 p{
+  color: #fff;
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif
+}
+.parte4 {
+  position: absolute;
+  background: rgba(136, 120, 226, 0.291);
+  width: 40%;
+  height: 43%;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+  flex-wrap: wrap;
+  border-radius: 0px 10px 10px 10px;
+}
+
+.novo h1{
+  color: #fff;
+  font-size: 50px;
+  font-family:'urbanist', sans-serif;
+  margin-left: 400px;
+  margin-right: 1150px;
+  margin-top: 40px;
+}
+
+/* --------------inicio do card novidades--------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;700&display=swap');
+
+.bod {
+    display: flex;
+    background-color: #232533a3;
+    overflow-x: hidden;
+    height: 50vh;
+    width: 55%;
+    margin-left: 50px;
+    padding-left:  280px;
+    padding-top: 50px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+input {
+    display: none;
+}
+
+.cards {
+    position: relative;
+    height: 400px;
+    width: 430px;
+    margin-bottom: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.cards label {
+    position: absolute;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+}
+
+.cards .card{
+    display: block;
+    position: relative;
+    height: 70%;
+    background-color: #323444;
+    border-radius: 10px;
+    padding: 30px 35px;
+}
+
+.card .image{
+
+    display: block;
+    margin-left: 5px;
+}
+
+.card .image img{
+
+    border-radius: 5px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 180px;
+}
+
+.card .infos{
+
+    display: block;
+    text-align:center;
+    padding-top: 20px;
+}
+
+.infos span{
+
+    display: block;
+}
+
+.infos .name{
+    font-size: 30px;
+    /* color: var(--current-color1); */
+    color: #0ef;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    transition: all .6s ease;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.infos .lorem{
+
+    font-size: 15.5px;
+    color: #ECEAED;
+    letter-spacing: 3px;
+}
+
+.card .btn-contact{
+    border: transparent;
+
+    
+}
+
+
+#s1:checked~.cards #slide6,
+#s2:checked~.cards #slide7,
+#s3:checked~.cards #slide8,
+#s4:checked~.cards #slide9,
+#s5:checked~.cards #slide1,
+#s6:checked~.cards #slide2,
+#s7:checked~.cards #slide3,
+#s8:checked~.cards #slide4, 
+#s9:checked~.cards #slide5 {
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-140%, 0, -420px);
+    --current-color1: #4e3f49;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide7,
+#s2:checked~.cards #slide8,
+#s3:checked~.cards #slide9,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2,
+#s6:checked~.cards #slide3,
+#s7:checked~.cards #slide4,
+#s8:checked~.cards #slide5,
+#s9:checked~.cards #slide6{
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-105%, 0, -320px);
+    --current-color1: #4e3f49;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide8,
+#s2:checked~.cards #slide9,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2,
+#s5:checked~.cards #slide3,
+#s6:checked~.cards #slide4,
+#s7:checked~.cards #slide5,
+#s8:checked~.cards #slide6,
+#s9:checked~.cards #slide7 {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-70%, 0, -220px);
+    --current-color1: #4e3f49;
+    --current-color2: #ECEAED;
+}
+
+#s1:checked~.cards #slide9,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3,
+#s5:checked~.cards #slide4,
+#s6:checked~.cards #slide5,
+#s7:checked~.cards #slide6,
+#s8:checked~.cards #slide7,
+#s9:checked~.cards #slide8 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-35%, 0, -120px);
+    --current-color1: #4e3f49;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4,
+#s5:checked~.cards #slide5,
+#s6:checked~.cards #slide6,
+#s7:checked~.cards #slide7,
+#s8:checked~.cards #slide8,
+#s9:checked~.cards #slide9 {
+    box-shadow:0 25px 50px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(0, 0, 0);
+    --current-color1: #4e3f49;
+    --current-color2: #404457;
+}
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5,
+#s5:checked~.cards #slide6,
+#s6:checked~.cards #slide7,
+#s7:checked~.cards #slide8,
+#s8:checked~.cards #slide9,
+#s9:checked~.cards #slide1 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(35%, 0, -120px);
+    --current-color1: #4e3f49;
+    --current-color2: #404457;
+}
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide4,
+#s3:checked~.cards #slide5,
+#s4:checked~.cards #slide6,
+#s5:checked~.cards #slide7,
+#s6:checked~.cards #slide8,
+#s7:checked~.cards #slide9,
+#s8:checked~.cards #slide1,
+#s9:checked~.cards #slide2 {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(70%, 0, -220px);
+    --current-color1: #4e3f49;
+    --current-color2: #404457;
+}
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide6,
+#s4:checked~.cards #slide7,
+#s5:checked~.cards #slide8,
+#s6:checked~.cards #slide9,
+#s7:checked~.cards #slide1,
+#s8:checked~.cards #slide2,
+#s9:checked~.cards #slide3 {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(105%, 0, -320px);
+    --current-color1:#4e3f49;
+    --current-color2: #404457;
+}
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide6,
+#s3:checked~.cards #slide7,
+#s4:checked~.cards #slide8,
+#s5:checked~.cards #slide9,
+#s6:checked~.cards #slide1,
+#s7:checked~.cards #slide2,
+#s8:checked~.cards #slide3,
+#s9:checked~.cards #slide4 {
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(140%, 0, -420px);
+    --current-color1:#4e3f49;
+    --current-color2: #404457;
+}
+
+/* ----------------fim do cardd novidades--------------------------- */
+
+/* ----------------------inicio das figuras---------------------------- */
+.flutuando1{
+  margin-top: -90px;
+}
+.figura1{
+  width: 700px;
+  height: 920px;
+  margin-left: 250px;
+  animation: flot 15s ease-in-out infinite;
+}
+@keyframes flot {
+  0%,100% {
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(-200px);
+  }
+}
+.flutuando2{
+  margin-left: 1150px;
+  margin-right: 50px;
+  margin-top: -430px;
+
+}
+.figura2{
+  width: 600px;
+  height: 600px;
+  margin-top: -90px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-50px);
+  }
+}
+
+/* -----------------------------fim das figuras------------------------------- */
+/* --------------------------------inicio das noticias-------------------------------*/
+
+.noticias{
+  background: rgba(103, 96, 233, 0.197);
+  width: 1200px;
+  height: 1500px;
+  margin-left: 350px;
+  padding-top: 10px;
+}
+.noticias1{
+  
+  background-color: red;
+  width: 1100px;
+  height: 150px;
+  margin-left: 50px;
+  /* top: 20px; */
+
+}
+
+/* ----------------------------------fim das noticias--------------------------------- */
+
+@media(max-width:500px){
+  .mes {
+    display: block;
+    margin-top: 200px;
+    margin-left: 50px;
+  }
+  .cardgeral {
+    display: block;
+    position:relative;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    height: 650px;
+    width: 300px;
+  }
+  .card{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .card .content p {
+    font-size: 12px;
+  }
+  .card h2{
+    font-size: 14px;
+  }
+  .card:hover {
+    height: 250px;
+}
+.mes{
+  left: 100px;
+  top: 150px;
+  font-size: 20px;
+  left: 80px;
+  margin-top: 10px;
+  font-size: 15px; 
+}
+.destaquesdomes .mes {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+.card:hover .img-box {
+  top: -70px;
+  scale: 0.75;
+}
+.parte2 {
+  margin-left: 10px;
+  margin-top: 290px;
+  width: 350px;
+  height: 490px;
+}
+.parte1 {
+  margin-left: 10px;
+  margin-top: 580px;
+  width: 350px;
+  height: 250px;
+}
+.parte4 {
+  margin-left: 10px;
+  margin-top: 860px;
+  width: 350px;
+  height: 250px;
+}
+.fotinha a img{
+  width: 200px;
+  height: 100px;
+}
+.fotinha img{
+  width: 130px;
+  height: 70px;
+}
+.fotinha{
+  width: 400px;
+  height: 130px;
+}
+.box .clip {
+  width: 400px;
+  height: 290px;
+  
+}
+.box{
+  width: 400px;
+  height: 290px;
+  left: 30px;
+  margin: 05px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.novo h1 {
+  width: 250px;
+  margin-left: 110px;
+  font-size: 30px;
+  padding-bottom: 20px;
+
+  
+    
+  
+}
+
+
+
+ 
+}
+
+

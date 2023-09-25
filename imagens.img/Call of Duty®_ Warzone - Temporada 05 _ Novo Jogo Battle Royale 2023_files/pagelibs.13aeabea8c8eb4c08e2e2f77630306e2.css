@@ -1,0 +1,1272 @@
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+@media screen and (max-width: 768px) {
+  .section-header {
+    text-align: left;
+  }
+}
+.display-none {
+  display: none;
+}
+.cta-text {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+#wz2-hero .atvi-column-layout-bg-media-container {
+  position: relative !important;
+  padding-bottom: 38%;
+  min-height: 500px;
+  max-height: 1100px;
+}
+@media screen and (max-width: 768px) {
+  #wz2-hero .atvi-column-layout-bg-media-container {
+    padding-bottom: 100%;
+    min-height: auto;
+  }
+}
+#wz2-hero .atvi-column-layout-bg-media-container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+39,1+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 39%, #000000 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 39%, #000000 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 39%, #000000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+}
+#wz2-hero .atvi-column-inner-container {
+  margin-top: -10%;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+@media screen and (max-width: 768px) {
+  #wz2-hero .atvi-column-inner-container {
+    margin-top: -25%;
+  }
+}
+#wz2-hero .atvi-column-inner-container #hero-logo-container {
+  max-width: 310px;
+  margin: 0 auto 20px;
+}
+#wz2-hero .atvi-column-inner-container #hero-logo-container img {
+  width: 100%;
+  display: block;
+}
+#wz2-hero .atvi-column-inner-container #hero-play-free {
+  width: fit-content;
+  position: relative;
+  margin: 0 auto 15px;
+  /*.strat2-bold();
+            font-size: clamp(1.1rem, 1.8vw, 3.7rem);
+            line-height: 1.5;*/
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  color: #FFF;
+  text-transform: uppercase;
+}
+#wz2-hero .atvi-column-inner-container #hero-play-free:after {
+  content: "";
+  height: 2px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(105%, 0);
+  -moz-transform: translate(105%, 0);
+  -ms-transform: translate(105%, 0);
+  -o-transform: translate(105%, 0);
+  transform: translate(105%, 0);
+  background: #78ac35;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #78ac35 0%, #000000 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #78ac35 0%, #000000 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #78ac35 0%, #000000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#78ac35', endColorstr='#000000', GradientType=1);
+  /* IE6-9 */
+}
+#wz2-hero .atvi-column-inner-container #hero-play-free:before {
+  content: "";
+  height: 2px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-105%, 0);
+  -moz-transform: translate(-105%, 0);
+  -ms-transform: translate(-105%, 0);
+  -o-transform: translate(-105%, 0);
+  transform: translate(-105%, 0);
+  background: #000000;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #000000 0%, #78ac35 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #000000 0%, #78ac35 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #000000 0%, #78ac35 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#78ac35', GradientType=1);
+  /* IE6-9 */
+}
+#wz2-hero .atvi-column-inner-container #hero-platform-ctas {
+  position: relative;
+  margin-bottom: 45px;
+  padding-bottom: 30px;
+}
+#wz2-hero .atvi-column-inner-container #hero-platform-ctas:after {
+  content: "";
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 1%, rgba(27, 39, 12, 0.5) 12%, #78ac35 50%, rgba(29, 41, 13, 0.5) 88%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 1%, rgba(27, 39, 12, 0.5) 12%, #78ac35 50%, rgba(29, 41, 13, 0.5) 88%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(27, 39, 12, 0.5) 12%, #78ac35 50%, rgba(29, 41, 13, 0.5) 88%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=1);
+  /* IE6-9 */
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+#wz2-hero .atvi-column-inner-container #hero-platform-ctas ul {
+  gap: .75%;
+}
+@media screen and (max-width: 960px) {
+  #wz2-hero .atvi-column-inner-container #hero-platform-ctas ul {
+    gap: 15px;
+  }
+}
+#wz2-hero .atvi-column-inner-container #hero-platform-ctas li a {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/green-btn-no-shadow-bg.png);
+  color: #FFFFFF;
+  position: relative;
+  width: 240px !important;
+}
+#wz2-hero .atvi-column-inner-container #hero-platform-ctas li a .icon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -6px;
+  opacity: .8;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+}
+#wz2-hero .atvi-column-inner-container #hero-platform-ctas li:hover a .icon {
+  opacity: 1;
+}
+#wz2-hero .atvi-column-inner-container #hero-platform-ctas li #ps5 .icon {
+  background: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/warzone2/common/ps-logo-white.png) center center no-repeat;
+  background-size: contain;
+}
+#wz2-hero .atvi-column-inner-container #hero-platform-ctas li #xbox .icon {
+  background: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/warzone2/common/xbox-logo-white.png) center center no-repeat;
+  background-size: contain;
+}
+#wz2-hero .atvi-column-inner-container #hero-platform-ctas li #bnet .icon {
+  background: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/warzone2/common/bnet-white-logo.png) center center no-repeat;
+  background-size: contain;
+}
+#wz2-hero .atvi-column-inner-container #hero-platform-ctas li #steam .icon {
+  background: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/warzone2/common/steam-logo-white.png) center center no-repeat;
+  background-size: contain;
+}
+#wz2-hero .atvi-column-inner-container #hero-ctas {
+  margin-bottom: 50px;
+}
+#wz2-hero .atvi-column-inner-container #hero-ctas ul {
+  gap: 20px;
+}
+#wz2-hero .atvi-column-inner-container #hero-ctas li a,
+#wz2-hero .atvi-column-inner-container #hero-ctas li button {
+  /*width: 185px !important;
+                    font-size: 17px !important;
+                    letter-spacing: 1px !important;*/
+}
+#wz2-hero .atvi-column-inner-container #hero-ctas .green-cta a,
+#wz2-hero .atvi-column-inner-container #hero-ctas .green-cta button {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/green-btn-no-shadow-bg.png);
+  color: #FFFFFF;
+}
+#wz2-hero .atvi-column-inner-container #hero-ctas .gray-cta a,
+#wz2-hero .atvi-column-inner-container #hero-ctas .gray-cta button {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/white-btn-no-shadow-bg.png);
+  color: #000;
+}
+#wz2-hero .atvi-column-inner-container #hero-description {
+  width: 65%;
+  margin: 0 auto 20px;
+  padding: 0 15px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #wz2-hero .atvi-column-inner-container #hero-description {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+#wz2-hero .atvi-column-inner-container #hero-description p {
+  color: #FFF;
+}
+#wz2-hero .atvi-column-inner-container #hero-description a {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/white-btn-no-shadow-bg.png);
+  color: #000;
+}
+
+#modes {
+  margin-top: 50px;
+}
+.mode-section {
+  position: relative;
+  margin-top: 50px;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .mode-section {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.mode-section .cod-pn-cta-modal > button {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/green-btn-no-shadow-bg.png);
+  color: #FFFFFF;
+}
+.mode-section .cod-pn-cta-modal > button span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.mode-section .cod-pn-cta-modal > button:after {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 8px;
+  background: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/vanguard/common/vg-arrow-right.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mode-section .cod-pn-cta-modal > button span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.mode-section .cod-pn-cta-modal > button:after {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 8px;
+  background: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/vanguard/common/vg-arrow-right.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mode-section .cod-pn-cta-modal .cod-pn-modal-disclaimer {
+  text-transform: uppercase;
+  text-align: center;
+}
+.mode-section .cod-pn-cta-modal .cod-pn-modal-header p {
+  color: #dbbf30;
+}
+.mode-section .cod-pn-cta-modal .cod-pn-wtb-inner-modal {
+  border: 3px solid #dbbf30;
+  border-radius: 8px;
+}
+.mode-section .cod-pn-cta-modal > .cod-pn-wtb-modal .cod-pn-modal-platforms a:after {
+  border-right: 1px solid #dbbf30;
+  border-top: 1px solid #dbbf30;
+}
+.mode-section .atvi-image {
+  width: 60%;
+}
+.mode-section .atvi-image img,
+.mode-section .atvi-image picture {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .mode-section .atvi-image {
+    width: 100%;
+  }
+}
+.mode-section .atvi-text {
+  width: 45%;
+}
+.mode-section .atvi-text h2 {
+  margin-bottom: 10px;
+}
+.mode-section .atvi-text h3 {
+  color: #44bad3;
+  font-size: 1rem;
+  line-height: 1;
+}
+.mode-section .atvi-text a {
+  text-decoration: none;
+}
+.mode-section .atvi-text p {
+  margin-bottom: 15px;
+}
+.mode-section .atvi-text .modes-legal {
+  margin: 15px 0 10px;
+}
+.mode-section .atvi-text .modes-legal p {
+  font-family: "Hitmarker Text Regular", Arial;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+.mode-section .atvi-layout-container {
+  width: 45%;
+}
+.mode-section .atvi-layout-container .atvi-text {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .mode-section .atvi-layout-container {
+    width: 100%;
+  }
+}
+.mode-section .cod-pn-cta-modal > button {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/green-btn-no-shadow-bg.png);
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+.mode-section .cod-pn-cta-modal > button span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.mode-section .cod-pn-cta-modal > button:after {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 8px;
+  background: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/vanguard/common/vg-arrow-right.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mode-section .cod-pn-cta-modal > button span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.mode-section .cod-pn-cta-modal > button:after {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 8px;
+  background: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/vanguard/common/vg-arrow-right.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mode-section .cod-pn-cta-modal .cod-pn-modal-disclaimer {
+  text-transform: uppercase;
+  text-align: center;
+}
+.mode-section .cod-pn-cta-modal .cod-pn-modal-header p {
+  color: #dbbf30 !important;
+}
+.mode-section .cod-pn-cta-modal .cod-pn-wtb-inner-modal {
+  border: 3px solid #dbbf30;
+}
+.mode-section .cod-pn-cta-modal > .cod-pn-wtb-modal .cod-pn-modal-platforms a:after {
+  border-right: 1px solid #dbbf30;
+  border-top: 1px solid #dbbf30;
+}
+.img-left-aligned .atvi-image {
+  order: 1;
+}
+.img-left-aligned .atvi-text {
+  order: 2;
+  margin-right: 2.5%;
+}
+@media screen and (max-width: 768px) {
+  .img-left-aligned .atvi-text {
+    margin-right: 0;
+    padding: 0 15px;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+.img-left-aligned .atvi-layout-container {
+  padding: 0 2.5%;
+  order: 2;
+}
+.img-left-aligned .atvi-layout-container .atvi-text {
+  margin-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .img-left-aligned .atvi-layout-container .atvi-text {
+    order: 2;
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img-left-aligned .atvi-layout-container {
+    order: 2;
+    margin-left: 0;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 15px;
+  }
+}
+.img-right-aligned .atvi-text {
+  order: 1;
+  margin-left: 2.5%;
+}
+@media screen and (max-width: 768px) {
+  .img-right-aligned .atvi-text {
+    order: 2;
+    margin-left: 0;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 15px;
+  }
+}
+.img-right-aligned .atvi-image {
+  order: 2;
+}
+@media screen and (max-width: 768px) {
+  .img-right-aligned .atvi-image {
+    order: 1;
+  }
+}
+.img-right-aligned .atvi-layout-container {
+  order: 1;
+  padding: 0 2.5%;
+}
+.img-right-aligned .atvi-layout-container .atvi-text {
+  margin-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .img-right-aligned .atvi-layout-container .atvi-text {
+    order: 2;
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img-right-aligned .atvi-layout-container {
+    order: 2;
+    margin-left: 0;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 15px;
+  }
+}
+#black-cell .atvi-cta,
+#black-cell .cod-playnow-modal {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#new-features {
+  margin-top: 50px;
+}
+#new-features .slide-caption {
+  margin-top: -30px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  #new-features .slide-caption {
+    padding-left: 15px;
+  }
+}
+#new-features .slide-caption p:first-of-type {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.88rem;
+  line-height: 0.88rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #FFF;
+  color: #44B9D4;
+}
+#new-features .slide-caption p:first-of-type b {
+  display: inline-block;
+  /*background: #606060;
+                padding: 3px 5px;
+                font-size: .5em;
+                margin-left: 5px;*/
+  vertical-align: middle;
+}
+#new-features .slide-caption p:last-of-type {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1.31rem;
+  line-height: 1.31rem;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 0;
+}
+#new-features .slick-prev,
+#new-features .slick-next {
+  top: auto;
+  bottom: -29px;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  width: 15px;
+  height: 15px;
+}
+#new-features .slick-prev {
+  left: calc(50% - 100px);
+}
+#new-features .slick-prev > span:before {
+  border-left: 3px solid #FFF;
+  border-top: 3px solid #FFF;
+  background: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#new-features .slick-next {
+  right: calc(50% - 100px);
+}
+#new-features .slick-next > span:before {
+  border-right: 3px solid #FFF;
+  border-top: 3px solid #FFF;
+  background: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#new-features .slick-dots {
+  bottom: -34px;
+}
+#new-features .slick-dots li.slick-active button span.slick-dot-icon {
+  background: #ccc;
+}
+#new-features .slick-dots li button span.slick-dot-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #FFF;
+  opacity: .6;
+}
+
+#dmz-updates {
+  margin-top: 50px;
+}
+#dmz-updates .slide-caption {
+  margin-top: -30px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  #dmz-updates .slide-caption {
+    padding-left: 15px;
+  }
+}
+#dmz-updates .slide-caption p:first-of-type {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.88rem;
+  line-height: 0.88rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #FFF;
+}
+#dmz-updates .slide-caption p:first-of-type b {
+  display: inline-block;
+  /*background: #606060;
+                padding: 3px 5px;
+                font-size: .5em;
+                margin-left: 5px;*/
+  vertical-align: middle;
+}
+#dmz-updates .slide-caption p:last-of-type {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1.31rem;
+  line-height: 1.31rem;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 0;
+}
+#dmz-updates .slick-prev,
+#dmz-updates .slick-next {
+  top: auto;
+  bottom: -29px;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  width: 15px;
+  height: 15px;
+}
+#dmz-updates .slick-prev {
+  left: 40%;
+}
+#dmz-updates .slick-prev > span:before {
+  border-left: 3px solid #FFF;
+  border-top: 3px solid #FFF;
+  background: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 640px) {
+  #dmz-updates .slick-prev {
+    left: 25%;
+  }
+}
+#dmz-updates .slick-next {
+  right: 40%;
+}
+#dmz-updates .slick-next > span:before {
+  border-right: 3px solid #FFF;
+  border-top: 3px solid #FFF;
+  background: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 640px) {
+  #dmz-updates .slick-next {
+    right: 25%;
+  }
+}
+#dmz-updates .slick-dots li.slick-active button span.slick-dot-icon {
+  background: #ccc;
+}
+#dmz-updates .slick-dots li button span.slick-dot-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #ccc;
+}
+
+#get-cp-back,
+#get-battlepass {
+  margin: 100px auto 0;
+}
+@media screen and (max-width: 768px) {
+  #get-cp-back,
+  #get-battlepass {
+    width: 100%;
+    margin: 15px auto;
+  }
+}
+#get-cp-back .atvi-column-inner-container,
+#get-battlepass .atvi-column-inner-container {
+  padding-left: 2.5%;
+}
+#get-cp-back .atvi-column-inner-container > *,
+#get-battlepass .atvi-column-inner-container > * {
+  flex-basis: unset;
+  flex-grow: unset;
+}
+@media screen and (max-width: 768px) {
+  #get-cp-back .atvi-column-inner-container,
+  #get-battlepass .atvi-column-inner-container {
+    padding-left: 0;
+  }
+}
+#get-cp-back #get-cp-back-child-resource-2,
+#get-battlepass #get-cp-back-child-resource-2,
+#get-cp-back #get-battlepass-child-resource-2,
+#get-battlepass #get-battlepass-child-resource-2 {
+  width: 65%;
+}
+@media screen and (max-width: 768px) {
+  #get-cp-back #get-cp-back-child-resource-2,
+  #get-battlepass #get-cp-back-child-resource-2,
+  #get-cp-back #get-battlepass-child-resource-2,
+  #get-battlepass #get-battlepass-child-resource-2 {
+    order: 1;
+    margin: 15px 0 0 0;
+    width: 100%;
+  }
+}
+#get-cp-back #get-cp-back-child-resource-2 #cp-back-img-container img,
+#get-battlepass #get-cp-back-child-resource-2 #cp-back-img-container img,
+#get-cp-back #get-battlepass-child-resource-2 #cp-back-img-container img,
+#get-battlepass #get-battlepass-child-resource-2 #cp-back-img-container img {
+  width: 100%;
+  display: block;
+}
+#get-cp-back #get-cp-back-child-resource-1,
+#get-battlepass #get-cp-back-child-resource-1,
+#get-cp-back #get-battlepass-child-resource-1,
+#get-battlepass #get-battlepass-child-resource-1 {
+  width: 34%;
+}
+@media screen and (max-width: 768px) {
+  #get-cp-back #get-cp-back-child-resource-1,
+  #get-battlepass #get-cp-back-child-resource-1,
+  #get-cp-back #get-battlepass-child-resource-1,
+  #get-battlepass #get-battlepass-child-resource-1 {
+    order: 2;
+    padding: 0 15px;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #get-cp-back #get-cp-back-child-resource-1 h2,
+  #get-battlepass #get-cp-back-child-resource-1 h2,
+  #get-cp-back #get-battlepass-child-resource-1 h2,
+  #get-battlepass #get-battlepass-child-resource-1 h2 {
+    text-align: left;
+  }
+}
+#get-cp-back #get-cp-back-child-resource-1 p,
+#get-battlepass #get-cp-back-child-resource-1 p,
+#get-cp-back #get-battlepass-child-resource-1 p,
+#get-battlepass #get-battlepass-child-resource-1 p {
+  margin: 5px 0 15px;
+}
+#get-cp-back #get-cp-back-child-resource-1 ul li:first-of-type,
+#get-battlepass #get-cp-back-child-resource-1 ul li:first-of-type,
+#get-cp-back #get-battlepass-child-resource-1 ul li:first-of-type,
+#get-battlepass #get-battlepass-child-resource-1 ul li:first-of-type {
+  margin-bottom: 15px;
+}
+#get-cp-back #get-cp-back-child-resource-1 .gray-cta a,
+#get-battlepass #get-cp-back-child-resource-1 .gray-cta a,
+#get-cp-back #get-battlepass-child-resource-1 .gray-cta a,
+#get-battlepass #get-battlepass-child-resource-1 .gray-cta a,
+#get-cp-back #get-cp-back-child-resource-1 .gray-cta button,
+#get-battlepass #get-cp-back-child-resource-1 .gray-cta button,
+#get-cp-back #get-battlepass-child-resource-1 .gray-cta button,
+#get-battlepass #get-battlepass-child-resource-1 .gray-cta button {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/white-btn-no-shadow-bg.png);
+  color: #000;
+  width: 185px !important;
+  margin: 0;
+}
+#get-cp-back #get-cp-back-child-resource-1 .green-cta a,
+#get-battlepass #get-cp-back-child-resource-1 .green-cta a,
+#get-cp-back #get-battlepass-child-resource-1 .green-cta a,
+#get-battlepass #get-battlepass-child-resource-1 .green-cta a,
+#get-cp-back #get-cp-back-child-resource-1 .green-cta button,
+#get-battlepass #get-cp-back-child-resource-1 .green-cta button,
+#get-cp-back #get-battlepass-child-resource-1 .green-cta button,
+#get-battlepass #get-battlepass-child-resource-1 .green-cta button {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/green-btn-no-shadow-bg.png);
+  color: #FFFFFF;
+  width: 185px !important;
+  margin: 0;
+}
+#get-cp-back #get-cp-back-child-resource-1 #get-cp-back-ctas-button-2-listItem,
+#get-battlepass #get-cp-back-child-resource-1 #get-cp-back-ctas-button-2-listItem,
+#get-cp-back #get-battlepass-child-resource-1 #get-cp-back-ctas-button-2-listItem,
+#get-battlepass #get-battlepass-child-resource-1 #get-cp-back-ctas-button-2-listItem {
+  display: none;
+}
+
+#roadmap {
+  margin-top: 60px;
+}
+#roadmap #roadmap-img-container {
+  width: 95%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+#roadmap #roadmap-img-container img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #roadmap #roadmap-img-container {
+    width: 100%;
+  }
+}
+#roadmap #roadmap-cta {
+  margin: 20px 0;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #roadmap #roadmap-cta {
+    display: block;
+  }
+  #roadmap #roadmap-cta ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+#roadmap #roadmap-cta ul button {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/white-btn-no-shadow-bg.png);
+  color: #000;
+  /*font-size: 17px;
+                letter-spacing: 1px;
+                width: 185px;*/
+}
+
+#ricochet {
+  margin: 50px 0 0;
+}
+#ricochet .atvi-column-inner-container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (max-width: 768px) {
+  #ricochet .atvi-column-inner-container {
+    max-width: 100%;
+  }
+}
+#ricochet #richochet-logo-container img {
+  width: 100%;
+  display: block;
+}
+#ricochet #ricochet-description p {
+  margin-bottom: 15px;
+}
+#ricochet #ricochet-cta li {
+  max-width: 240px;
+}
+@media screen and (max-width: 768px) {
+  #ricochet #ricochet-cta li {
+    margin: 0 auto;
+  }
+}
+#ricochet #ricochet-cta a {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/white-btn-no-shadow-bg.png);
+  color: #000;
+  /*width: 185px;
+            font-size: 17px;
+            letter-spacing: 1px;*/
+}
+
+#the-full-experience {
+  margin: 50px 0;
+  padding-left: 2.5%;
+}
+@media screen and (max-width: 768px) {
+  #the-full-experience {
+    padding-left: 0;
+  }
+}
+#the-full-experience .atvi-column-inner-container > * {
+  flex-grow: unset;
+  flex-basis: unset;
+}
+#the-full-experience .atvi-column-inner-container #the-full-experience-child-resource-1 {
+  width: 40%;
+  padding-left: 2.5%;
+}
+@media screen and (max-width: 768px) {
+  #the-full-experience .atvi-column-inner-container #the-full-experience-child-resource-1 {
+    padding: 0 15px;
+    order: 2;
+  }
+}
+#the-full-experience .atvi-column-inner-container #the-full-experience-child-resource-2 {
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  #the-full-experience .atvi-column-inner-container #the-full-experience-child-resource-2 {
+    order: 1;
+  }
+}
+#the-full-experience #get-xp-img-container img {
+  width: 100%;
+  display: block;
+}
+#the-full-experience #get-xp-description h2 {
+  margin-bottom: 15px;
+}
+#the-full-experience #get-xp-description p {
+  margin-bottom: 15px;
+}
+#the-full-experience #get-xp-cta li {
+  max-width: 240px;
+}
+@media screen and (max-width: 768px) {
+  #the-full-experience #get-xp-cta li {
+    margin: 0 auto;
+  }
+}
+#the-full-experience #get-xp-cta a {
+  background: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.92px;
+  border: none;
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+  line-height: 1rem;
+  width: 240px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../../../../content/dam/atvi/callofduty/cod-touchui/mw2/common/ctas/white-btn-no-shadow-bg.png);
+  color: #000;
+}
+

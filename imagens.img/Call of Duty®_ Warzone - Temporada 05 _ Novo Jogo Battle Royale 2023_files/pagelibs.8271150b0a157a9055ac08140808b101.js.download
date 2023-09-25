@@ -1,0 +1,112 @@
+(function() {
+
+
+    var init = function() {
+
+        $(window).on("load", function() {
+
+            // Figure out element to scroll to
+            var target = $(window.location.hash);
+            if(window.location.hash.length > 0) {
+            	target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+            }
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $("html, body").animate(
+                    {
+                        scrollTop: target.offset().top - 100,
+                    },
+                    1000,
+                    function () {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        //$target.css('outline', 'none');
+                        $target.focus();
+                        if ($target.is(":focus")) {
+                            // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        }
+                    }
+                );
+            }
+
+        });
+    }
+
+    $(init);
+
+})();
+(function() {
+
+    var init = function() {
+
+		initAnalytics();
+
+    };
+
+    var initAnalytics = function() {
+
+        $("#hero-platform-ctas a").on("click", function() {
+
+			updateDataLayer($(this));
+
+        });
+
+    };
+
+    var updateDataLayer = function($el) {
+
+        var consoleId = $el.closest("li").attr("id").replace("-listItem", "");
+
+		if (dataLayer) {
+            dataLayer.push({
+                action: "wz:" + consoleId, 
+                category: "purchase",
+                destinationUrl: $el.attr("href"),
+                event: "purchase",
+                gameName: "wz",
+                itpType: "purchase",
+                label: "standard:" + $el.attr("href"),
+                pageUrl: window.location.href,
+                platform: consoleId,
+                productBundle: "standard",
+                purchaseLink: $el.attr("href")
+            });
+        }
+
+    };
+
+    $(init);
+
+})();
+
+(function() {
+
+    var init = function() {
+
+		insertIcon();
+
+    };
+
+    var insertIcon = function() {
+
+		//hack to insert platform icon inside <a> tag
+
+        $("#hero-platform-ctas a").each(function() {
+
+			$(this).prepend("<span class='icon'></span>");
+
+        });
+
+    };
+
+    $(init);
+
+})();
+

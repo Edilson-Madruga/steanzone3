@@ -1,0 +1,46 @@
+html[lang="ja"] .cod-global-footer .legal-links li.ja-only {
+  display: block;
+}
+html[lang="ja"] .cod-global-footer .legal-links li:has(+ .ja-only):after {
+  content: "|";
+  color: #adabab;
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+footer .legal-links li:nth-last-child(-n + 2):after {
+  content: "";
+  color: #adabab;
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+footer .legal-links li.ja-only {
+  display: none;
+}
+footer .studio-links {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+footer .studio-links ul {
+  grid-column: 2;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+@media (max-width: 600px) {
+  footer .studio-links ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+    grid-gap: 60px 24px;
+  }
+}
