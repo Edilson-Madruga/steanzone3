@@ -414,6 +414,7 @@ img {
   width: 800px;
   height: 230px;
   overflow-x: scroll;
+  box-shadow:  0  10px 30px 10px rgba(13, 12, 12, 2.95);
 }
 .fotinha p{
   width: 400px;
@@ -781,10 +782,11 @@ input {
 }
 .noticias1 img {
   width: 200px;
-  height: 140px;
+  height: 130px;
   margin-left: 2ch;
   border-radius: 5px;
   z-index: 10;
+  box-shadow:  0  10px 30px 0 rgba(13, 12, 12, 1.95);
 }
 .noticias p {
   display: block;
