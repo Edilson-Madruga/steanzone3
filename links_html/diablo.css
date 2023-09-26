@@ -67,7 +67,7 @@
     }
     h2{
         font-size: 40px;
-        color: red;
+        color: rgb(80, 35, 243);
     }
     @media(max-width:750px){
         .imginicio img{
