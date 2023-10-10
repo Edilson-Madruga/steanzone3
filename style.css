@@ -74,8 +74,6 @@ img {
   height: 100px;
 }
 
-
-
 /* estiliza nome site */
 .logo {
   font-size: 2rem;
@@ -249,8 +247,7 @@ img {
     margin-left: 100px;
     height: 450px;
     width: 1700px;
-    border-radius: 20px;
-    
+    border-radius: 20px;  
 }
 
 .destaquesdomes .mes{
@@ -406,7 +403,6 @@ img {
   margin-left: 3px;
 }
 
-
 .fotinha {
   display: flex;
   justify-content:start ;
@@ -433,10 +429,6 @@ img {
   width: 175px;
   height: 100px;
 }
-
-
-
-
 
 .parte1 p{
   color: #fff;
@@ -561,7 +553,6 @@ input {
 
 .infos .name{
     font-size: 30px;
-    /* color: var(--current-color1); */
     color: #0ef;
     letter-spacing: 4px;
     margin-bottom: 10px;
@@ -715,7 +706,6 @@ input {
     --current-color1:#4e3f49;
     --current-color2: #404457;
 }
-
 /* ----------------fim do card novidades--------------------------- */
 
 /* ----------------------inicio das figuras---------------------------- */
@@ -756,27 +746,25 @@ input {
     transform: translateY(-50px);
   }
 }
-
 /* -----------------------------fim das figuras------------------------------- */
-/* --------------------------------inicio das noticias-------------------------------*/
 
+/* -------------------------------------inicio css fitas--------------------------- */
 .fitas{
   position: relative;
   width: 100%;
   height: 200vh;
   overflow: hidden;
-  /* background: #111; */
   z-index: -1;
+  margin-top: -40px;
 }
 .fitas::before{
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
   background: radial-gradient(transparent,transparent,#0005,#0004);
-  /* z-index: -100; */
   pointer-events: none;
 }
 .scroll{
@@ -789,7 +777,7 @@ input {
 .scroll div {
   background: #e0c63461;
   color: #0d0a07;
-  font-size: 3em;
+  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 900;
@@ -818,12 +806,10 @@ input {
     transform: translateX(-200%);
   }
 }
+/* ------------------------------------fim css fitas--------------------- */
 
 
-
-
-
-
+/* --------------------------------inicio das noticias-------------------------------*/
 
 .noticias{
   background: rgba(103, 96, 233, 0.197);
@@ -831,7 +817,7 @@ input {
   height: 1500px;
   margin-left: 350px;
   padding-top: 10px;
-  margin-top: -1900px;
+  margin-top: -1850px;
 }
 .noticias1 {
   display: flex;
@@ -843,55 +829,7 @@ input {
   margin-left: 50px;
   border-radius: 35px;
   box-shadow: 0 10px 30px 0 rgba(233, 227, 227, 0.45);
-  }
-/* .bode{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #25252b;
 }
-.box{
-  position: relative;
-  width: 300px;
-  height: 300px;
-  background: repeating-conic-gradient(from var(--a),#ff2770 0%,#ff2770 5%,transparent 5%,transparent 40%,#ff2770 50%);
-  animation: animate 4s linear infinite;
-  border-radius: 20px;
-}
-@property --a{
-  syntax: '<angle>';
-  inherits: false;
-  initial-value: 0deg;
-}
-@keyframes animate{
-  0%{
-    --a: 0deg;
-  }
-  100%{
-    --a: 360deg
-  }
-}
-
-.box::before{
-  contain: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: repeating-conic-gradient(from var(--a),#45f3ff 0%,#45f3ff 5%,transparent 5%,transparent 40%,#45f3ff 50%);
-  animation: animate 4s linear infinite;
-  animation-delay: -1s;
-  border-radius: 20px;
-}
-.box::after{
-  content: '';
-  position:absolute;
-  inset: 8px;
-  background: #2d2d39;
-  border-radius: 15px;
-  border: 8px solid #25252b;
-
-} */
 .noticias1 img {
   width: 200px;
   height: 130px;
@@ -906,7 +844,6 @@ input {
   font-size: 15px;
   margin-left: 40px;
 }
-
 .noti{
   color: #0ef;
   font-size: 25px;
@@ -950,8 +887,218 @@ input {
   z-index: 10;
   box-shadow:  0  10px 30px 0 rgba(13, 12, 12, 1.95);
 }
+.noticias4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(146, 123, 123);
+  width: 1100px;
+  height: 150px;
+  margin-left: 50px;
+  border-radius: 35px;
+  box-shadow: 0 10px 30px 0 rgba(233, 227, 227, 0.45);
+}
+.noticias4 img {
+  width: 200px;
+  height: 130px;
+  margin-left: 20px;
+  border-radius: 5px;
+  z-index: 10;
+  box-shadow:  0  10px 30px 0 rgba(13, 12, 12, 1.95);
+}
+.noticias5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(146, 123, 123);
+  width: 1100px;
+  height: 150px;
+  margin-left: 50px;
+  border-radius: 35px;
+  box-shadow: 0 10px 30px 0 rgba(233, 227, 227, 0.45);
+}
+.noticias5 img {
+  width: 200px;
+  height: 130px;
+  margin-left: 20px;
+  border-radius: 5px;
+  z-index: 10;
+  box-shadow:  0  10px 30px 0 rgba(13, 12, 12, 1.95);
+}
+.noticias6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(146, 123, 123);
+  width: 1100px;
+  height: 150px;
+  margin-left: 50px;
+  border-radius: 35px;
+  box-shadow: 0 10px 30px 0 rgba(233, 227, 227, 0.45);
+}
+.noticias6 img {
+  width: 200px;
+  height: 130px;
+  margin-left: 20px;
+  border-radius: 5px;
+  z-index: 10;
+  box-shadow:  0  10px 30px 0 rgba(13, 12, 12, 1.95);
+}
+.noticias7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(146, 123, 123);
+  width: 1100px;
+  height: 150px;
+  margin-left: 50px;
+  border-radius: 35px;
+  box-shadow: 0 10px 30px 0 rgba(233, 227, 227, 0.45);
+}
+.noticias7 img {
+  width: 200px;
+  height: 130px;
+  margin-left: 20px;
+  border-radius: 5px;
+  z-index: 10;
+  box-shadow:  0  10px 30px 0 rgba(13, 12, 12, 1.95);
+}
+.noticias8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(146, 123, 123);
+  width: 1100px;
+  height: 150px;
+  margin-left: 50px;
+  border-radius: 35px;
+  box-shadow: 0 10px 30px 0 rgba(233, 227, 227, 0.45);
+}
+.noticias8 img {
+  width: 200px;
+  height: 130px;
+  margin-left: 20px;
+  border-radius: 5px;
+  z-index: 10;
+  box-shadow:  0  10px 30px 0 rgba(13, 12, 12, 1.95);
+}
+
 /* ----------------------------------fim das noticias--------------------------------- */
 
+/* --------------------------------inicio das estilos-------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=poppins:300,400,500,600,700,800,900&display=swap');
+
+.estilos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    cursor: none;
+}
+ul li
+{
+    list-style: none;
+}
+ul li a
+{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:start;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+ul:hover li a
+{
+    opacity:0.1 ;
+}
+ul li a:hover
+{
+    opacity: 1;
+    cursor: none;
+}
+ul li a img
+{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 0;
+    transition: 0.2s;
+    pointer-events: none;
+    z-index: -2;
+}
+ul li a:hover img
+{
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+}
+ul li a::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-45%,-45%);
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.50;
+    font-size: 14vw;
+    z-index: -1;
+    color: transparent;
+    -webkit-text-stroke:3px #05e1f5 ;
+}
+ul li a:hover::before
+{
+    opacity: 1;
+}
+.cursor{
+    position:absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:transparent;
+    border: 4px solid #2efc72;
+    pointer-events: none;
+    border-radius: 50%;
+    transition: width 0.25s, height 0.25s;
+}
+ul li:hover ~ .cursor
+{
+    width: 40vw;
+    height: 40vw;
+    border: 2px solid #2efc72;
+}
+.cursor::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #2efc72;
+    border: 4px solid #142329;
+    border-radius:50% ;
+    transition: 0.5s;
+    scale: 0;
+}
+ul li:hover ~ .cursor::before
+{
+    scale: 1;
+}
+/* --------------------------------fim das estilos-------------------------------*/
 
 @media(max-width:500px){
   .mes {
