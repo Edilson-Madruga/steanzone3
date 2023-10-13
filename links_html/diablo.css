@@ -69,6 +69,48 @@
         font-size: 40px;
         color: rgb(80, 35, 243);
     }
+    .flutuando7{
+        margin-left: -350px;
+        margin-right: -550px;
+        padding: -450px;
+      
+    }
+    .figura7{
+        width: 400px;
+        height: 400px;
+        margin-top: 90px;
+        animation: float 7s ease-in-out infinite;
+        position: fixed;
+    }
+    @keyframes float {
+        0%,100% {
+          transform: translateY(0);
+        }
+        50%{
+          transform: translateY(-50px);
+        }
+    }
+    .flutuando8{
+        margin-left: 1100px;
+        margin-right: -350px;
+        padding: -450px;
+      
+    }
+    .figura8{
+        width: 400px;
+        height: 400px;
+        margin-top: 90px;
+        animation: float 9s ease-in-out infinite;
+        position: fixed;
+    }
+    @keyframes float {
+        0%,100% {
+          transform: translateY(0);
+        }
+        50%{
+          transform: translateY(-120px);
+        }
+    }
     @media(max-width:750px){
         .imginicio img{
             width: 440px;
