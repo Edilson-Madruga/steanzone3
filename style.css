@@ -387,7 +387,7 @@ img {
   height: 16px;
 }
 ::-webkit-scrollbar-thumb{
-  background-color: #7c5413ea;
+  background-color: #640beaea;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-track{
@@ -708,6 +708,18 @@ input {
     --current-color2: #404457;
 }
 /* ----------------fim do card novidades--------------------------- */
+
+.canvas{
+  /* background: red; */
+}
+#canvas1 {
+  overflow: hidden;
+  background: #06000000;
+  
+}
+
+
+
 
 /* ----------------------inicio das figuras---------------------------- */
 .flutuando1{
