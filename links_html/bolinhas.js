@@ -40,7 +40,7 @@ class Particle {
     }
     draw() {
         if (this.random > 0.05){
-            ctx.fillStyle = 'red';
+            ctx.fillStyle = 'white';
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
             ctx.closePath();
