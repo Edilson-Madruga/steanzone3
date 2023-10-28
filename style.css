@@ -254,6 +254,8 @@ img {
     display: block;
     background: rgba(11, 10, 10, 0.669);
     opacity: 70%;
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: 650px;
     margin-right: 550px;
     padding: 30px;
@@ -1165,6 +1167,13 @@ ul li:hover ~ .cursor::before
   box-sizing: border-box;
 } */
 html,
+/* .mes h2 {
+  color: #fff;
+  margin-top:200px ;
+  margin-left: 780px;
+  font-size: 60px;
+} */
+
 .postit {
   overscroll-behavior-x: none;
   overscroll-behavior-y: none;
@@ -1176,9 +1185,10 @@ html,
   font-family: "Kalam", sans-serif;
   /* min-height: 100vh; */
   overflow-x: hidden;
-  background-image: url("/imagens.img/fundo\ postit.jpg");
+  /* background-image: url("/imagens.img/fundo\ postit.jpg"); */
+  /* background-color: rgba(115, 30, 30, 0.402); */
   background-size: cover;
-  margin-top: 150px;
+  margin-top: -250px;
   margin-left: 200px;
   margin-right: 200px;
 }
@@ -1265,8 +1275,8 @@ a {
   align-items: center;
   padding: 0.5rem;
   border-radius: 5px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px rgba(221, 207, 207, 0.5);
+  box-shadow: 0 8px 10px rgba(217, 204, 204, 0.5);
   width: 100%;
   height: 60%;
   aspect-ratio: 1 /1;
@@ -1318,13 +1328,6 @@ figure figcaption {
   font-weight: 400;
   color: #888;
   line-height: 1;
-  /*
-  background: rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(3px);
-  
-  text-stroke: 0.5px rgba(20, 20, 20, 0.5);
-	-webkit-text-stroke: 0.5px rgba(20, 20, 20, 0.5);
-  */
   filter: invert(1);
   mix-blend-mode: difference;
   transform: translateZ(0);
@@ -1363,6 +1366,7 @@ figure svg {
 #info a {
   font-size: 1.1rem;
 }
+
 @media (min-width: 800px) {
   #gallery {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
