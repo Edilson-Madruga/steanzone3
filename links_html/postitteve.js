@@ -6,6 +6,8 @@ const imagem2 = document.getElementById("imagem2");
 const video2 = document.getElementById("video2");
 const imagem3 = document.getElementById("imagem3");
 const video3 = document.getElementById("video3");
+const imagem5 = document.getElementById("imagem5");
+const video5 = document.getElementById("video5");
 
 imagem0.addEventListener("mouseover", () => {
     video0.style.display = "block";
@@ -42,4 +44,13 @@ imagem3.addEventListener("mouseover", () => {
 imagem3.addEventListener("mouseout", () => {
     video3.style.display = "none";
     video3.pause();
+});
+imagem5.addEventListener("mouseover", () => {
+    video5.style.display = "block";
+    video5.play();
+});
+
+imagem5.addEventListener("mouseout", () => {
+    video5.style.display = "none";
+    video5.pause();
 });

@@ -1181,15 +1181,15 @@ ul li:hover ~ .cursor::before
   
 }
 
-#video0 #video1 #video2 #video3::-webkit-media-controls {
+#video0 #video1 #video2 #video3 #video5::-webkit-media-controls {
   display: none;
 }
 
-#video0 #video1 #video2 #video3::-webkit-media-controls-panel {
+#video0 #video1 #video2 #video3 #video5::-webkit-media-controls-panel {
   display: none;
 }
 
-#video0 #video1 #video2 #video3::-webkit-media-controls-play-button {
+#video0 #video1 #video2 #video3 #video5::-webkit-media-controls-play-button {
   display: none;
 }
 .postit {
