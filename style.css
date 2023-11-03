@@ -386,7 +386,7 @@ img {
   width: 45%;
   height: 80%;
   display: flex;
-  margin-top: 30px;
+  margin-top: 850px;
   margin-left: 900px;
   flex-wrap: wrap;
   border-radius: 0px 10px 10px 10px;
@@ -443,7 +443,7 @@ img {
 }
 
 .parte1 p{
-  color: #fff;
+  color: #ffffff;
   font-size: 25px;
   font-family:'Times New Roman', Times, serif
 }
