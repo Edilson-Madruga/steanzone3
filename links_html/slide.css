@@ -76,6 +76,14 @@
      transform: rotate(-90deg);
    }
 
+   .painel{
+    background: rgba(255, 0, 0, 0.24);
+    width: 800px;
+    height: 400px;
+    margin-top: 250px;
+    box-shadow: 0 0 50px 0 blue;
+    border-radius: 10px;
+   }
    @media(max-width:750px){
     .parte3 {
         width: 350px;
