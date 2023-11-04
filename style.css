@@ -1189,9 +1189,9 @@ ul li:hover ~ .cursor::before
 .teve{
   
   background: rgba(32, 37, 76, 0.507);
-  width: 850px;
-  height: 480px;
-  margin-left:520px;
+  width: 600px;
+  height: 337px;
+  margin-left:650px;
   margin-top: 0px;
   border: 20px;
   border-color: #05e1f5;
@@ -1206,8 +1206,13 @@ ul li:hover ~ .cursor::before
 } */
 .videoteve{
   z-index: 10;
-  /* margin-top: -440px; */
+  width: 600px;
+  height: 337px;
 }
+#video0, #video1, #video2, #video3, #video4, #video5, #video6, #video7, #video8,#video9,#video10 ,#video11  {
+  width: 600px;
+  height: 337px;
+} 
 
 #video0 #video1 #video2 #video3 #video4 #video5 #video6 #video7 #video8 #video9 #video10 #video11::-webkit-media-controls {
   display: none;
@@ -1232,7 +1237,7 @@ ul li:hover ~ .cursor::before
   overflow-x: hidden;
   background-size: cover;
   margin-top: -50px;
-  margin-left: 100px;
+  margin-left: 140px;
   margin-right: 100px;
 }
 
