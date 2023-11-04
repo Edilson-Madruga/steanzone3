@@ -1214,15 +1214,15 @@ ul li:hover ~ .cursor::before
   height: 337px;
 } 
 
-#video0 #video1 #video2 #video3 #video4 #video5 #video6 #video7 #video8 #video9 #video10 #video11::-webkit-media-controls {
+#video0 #video1 #video2 #video3 #video4 #video5 #video6 #video7 #video8 #video9 #video10 #video11 #video12, #video13, #video14, #video15, #video16, #video17, #video18, #video19, #video20,#video21,#video22 ,#video23,#video24::-webkit-media-controls {
   display: none;
 }
 
-#video0 #video1 #video2 #video3 #video4 #video5 #video6 #video7 #video8 #video9 #video10 #video11::-webkit-media-controls-panel {
+#video0 #video1 #video2 #video3 #video4 #video5 #video6 #video7 #video8 #video9 #video10 #video11 #video12, #video13, #video14, #video15, #video16, #video17, #video18, #video19, #video20,#video21,#video22 ,#video23,#video24::-webkit-media-controls-panel {
   display: none;
 }
 
-#video0 #video1 #video2 #video3 #video4 #video5 #video6 #video7 #video8 #video9 #video10 #video11 ::-webkit-media-controls-play-button {
+#video0 #video1 #video2 #video3 #video4 #video5 #video6 #video7 #video8 #video9 #video10 #video11 #video12, #video13, #video14, #video15, #video16, #video17, #video18, #video19, #video20,#video21,#video22 ,#video23,#video24::-webkit-media-controls-play-button {
   display: none;
 }
 .postit {
