@@ -1186,12 +1186,6 @@ ul li:hover ~ .cursor::before
 
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 
-/* .mes h2 {
-  color: #fff;
-  margin-top:200px ;
-  margin-left: 780px;
-  font-size: 60px;
-} */
 .teve{
   
   background: rgba(32, 37, 76, 0.507);
@@ -1235,23 +1229,17 @@ ul li:hover ~ .cursor::before
   position: relative;
   color: #222;
   font-family: "Kalam", sans-serif;
-  /* min-height: 100vh; */
   overflow-x: hidden;
-  /* background-image: url("/imagens.img/fundo\ postit.jpg"); */
-  /* background-color: rgba(115, 30, 30, 0.402); */
   background-size: cover;
   margin-top: -50px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
-
 .postit1{
-  /* background: rgba(255, 0, 0, 0.301); */
   margin-bottom: -90px;
 }
 .postit2{
-  /* background: rgba(0, 128, 0, 0.345); */
   margin-top: 50px;
 }
 
@@ -1329,7 +1317,7 @@ ul li:hover ~ .cursor::before
   aspect-ratio: 1 /1;
   text-align: center;
   background-color: white;
-  background-image: url("https://images.unsplash.com/photo-1603484477859-abe6a73f9366?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTM0NTk4ODN8&ixlib=rb-4.0.3&q=100&w=800");
+  background-image: url("");
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
@@ -1366,19 +1354,7 @@ ul li:hover ~ .cursor::before
   filter: drop-shadow(0.25rem 0.13rem 0.15rem rgba(0, 0, 0, 0.7));
   transform: translateZ(0);
 }
-/* figure figcaption {
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  right: 0;
-  font-size: 18px;
-  font-weight: 400;
-  color: #888;
-  line-height: 1;
-  filter: invert(1);
-  mix-blend-mode: difference;
-  transform: translateZ(0);
-} */
+
 
 @keyframes swing {
   0% {
@@ -1398,6 +1374,17 @@ ul li:hover ~ .cursor::before
   #gallery {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
+}
+#video0 #video1 #video2 #video3 #video4 #video5 #video6 #video7 #video8 #video9 #video10 #video11::-webkit-media-controls {
+  display: none;
+}
+
+#video0 #video1 #video2 #video3 #video4 #video5 #video6 #video7 #video8 #video9 #video10 #video11::-webkit-media-controls-panel {
+  display: none;
+}
+
+#video0 #video1 #video2 #video3 #video4 #video5 #video6 #video7 #video8 #video9 #video10 #video11 ::-webkit-media-controls-play-button {
+  display: none;
 }
 
 /* ----------------------------------------------------------------------fim postit----------------------------------------------------------- */
