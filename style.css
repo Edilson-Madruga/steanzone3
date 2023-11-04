@@ -14,6 +14,7 @@ body {
   background: url('imagens.img/fundogeral.jpg'); 
   background:  url(imagens.img/fundo\ cod.jpg) center center no-repeat fixed;
   background-size: cover;
+  overflow-x: hidden;
 } 
 
 .logotipo {

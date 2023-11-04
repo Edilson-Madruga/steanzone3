@@ -26,6 +26,28 @@ const imagem12 = document.getElementById("imagem12");
 const video12 = document.getElementById("video12");
 const imagem13 = document.getElementById("imagem13");
 const video13 = document.getElementById("video13");
+const imagem14 = document.getElementById("imagem14");
+const video14 = document.getElementById("video14");
+const imagem15 = document.getElementById("imagem15");
+const video15 = document.getElementById("video15");
+const imagem16 = document.getElementById("imagem16");
+const video16 = document.getElementById("video16");
+const imagem17 = document.getElementById("imagem17");
+const video17 = document.getElementById("video17");
+const imagem18 = document.getElementById("imagem18");
+const video18 = document.getElementById("video18");
+const imagem19 = document.getElementById("imagem19");
+const video19 = document.getElementById("video19");
+const imagem20 = document.getElementById("imagem20");
+const video20 = document.getElementById("video20");
+const imagem21 = document.getElementById("imagem21");
+const video21 = document.getElementById("video21");
+const imagem22 = document.getElementById("imagem22");
+const video22 = document.getElementById("video22");
+const imagem23 = document.getElementById("imagem23");
+const video23 = document.getElementById("video23");
+
+
 imagem0.addEventListener("mouseover", () => {
     video0.style.display = "block";
     video0.play();
@@ -151,4 +173,94 @@ imagem13.addEventListener("mouseover", () => {
 imagem13.addEventListener("mouseout", () => {
     video13.style.display = "none";
     video13.pause();
+});
+imagem14.addEventListener("mouseover", () => {
+    video14.style.display = "block";
+    video14.play();
+});
+
+imagem14.addEventListener("mouseout", () => {
+    video14.style.display = "none";
+    video14.pause();
+});
+imagem15.addEventListener("mouseover", () => {
+    video15.style.display = "block";
+    video15.play();
+});
+
+imagem15.addEventListener("mouseout", () => {
+    video15.style.display = "none";
+    video15.pause();
+});
+imagem16.addEventListener("mouseover", () => {
+    video16.style.display = "block";
+    video16.play();
+});
+
+imagem16.addEventListener("mouseout", () => {
+    video16.style.display = "none";
+    video16.pause();
+});
+imagem17.addEventListener("mouseover", () => {
+    video17.style.display = "block";
+    video17.play();
+});
+
+imagem17.addEventListener("mouseout", () => {
+    video17.style.display = "none";
+    video17.pause();
+});
+imagem18.addEventListener("mouseover", () => {
+    video18.style.display = "block";
+    video18.play();
+});
+
+imagem18.addEventListener("mouseout", () => {
+    video18.style.display = "none";
+    video18.pause();
+});
+imagem19.addEventListener("mouseover", () => {
+    video19.style.display = "block";
+    video19.play();
+});
+
+imagem19.addEventListener("mouseout", () => {
+    video19.style.display = "none";
+    video19.pause();
+});
+imagem20.addEventListener("mouseover", () => {
+    video20.style.display = "block";
+    video20.play();
+});
+
+imagem20.addEventListener("mouseout", () => {
+    video20.style.display = "none";
+    video20.pause();
+});
+imagem21.addEventListener("mouseover", () => {
+    video21.style.display = "block";
+    video21.play();
+});
+
+imagem21.addEventListener("mouseout", () => {
+    video21.style.display = "none";
+    video21.pause();
+});
+imagem22.addEventListener("mouseover", () => {
+    video22.style.display = "block";
+    video22.play();
+});
+
+imagem22.addEventListener("mouseout", () => {
+    video22.style.display = "none";
+    video22.pause();
+});
+imagem23.addEventListener("mouseover", () => {
+    video23.style.display = "block";
+    video23.play();
+});
+
+imagem23.addEventListener("mouseout", () => {
+    video23.style.display = "none";
+    video23.pause();
 });
