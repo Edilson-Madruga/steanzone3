@@ -22,7 +22,10 @@ const imagem10 = document.getElementById("imagem10");
 const video10 = document.getElementById("video10");
 const imagem11 = document.getElementById("imagem11");
 const video11 = document.getElementById("video11");
-
+const imagem12 = document.getElementById("imagem12");
+const video12 = document.getElementById("video12");
+const imagem13 = document.getElementById("imagem13");
+const video13 = document.getElementById("video13");
 imagem0.addEventListener("mouseover", () => {
     video0.style.display = "block";
     video0.play();
@@ -130,4 +133,22 @@ imagem11.addEventListener("mouseover", () => {
 imagem11.addEventListener("mouseout", () => {
     video11.style.display = "none";
     video11.pause();
+});
+imagem12.addEventListener("mouseover", () => {
+    video12.style.display = "block";
+    video12.play();
+});
+
+imagem12.addEventListener("mouseout", () => {
+    video12.style.display = "none";
+    video12.pause();
+});
+imagem13.addEventListener("mouseover", () => {
+    video13.style.display = "block";
+    video13.play();
+});
+
+imagem13.addEventListener("mouseout", () => {
+    video13.style.display = "none";
+    video13.pause();
 });

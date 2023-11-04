@@ -78,12 +78,17 @@
 
    .painel{
     background: rgba(255, 0, 0, 0.24);
-    width: 800px;
-    height: 400px;
+    width: 600px;
+    height: 337px;
     margin-top: 250px;
     box-shadow: 0 0 50px 0 blue;
     border-radius: 10px;
+    margin-left: 150px;
    }
+   #video12, #video13, #video14, #video15, #video16, #video17, #video18, #video19, #video20,#video21,#video22 ,#video23,#video24  {
+    width: 600px;
+    height: 337px;
+  } 
    @media(max-width:750px){
     .parte3 {
         width: 350px;
