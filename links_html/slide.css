@@ -88,7 +88,22 @@
    #video12, #video13, #video14, #video15, #video16, #video17, #video18, #video19, #video20,#video21,#video22 ,#video23,#video24  {
     width: 600px;
     height: 337px;
+    border-radius: 10px;
   } 
+  .dialog-box {
+    /* display: none; */
+    /* position: absolute; */
+    margin-top:-650px;
+    margin-left: 1110px;
+    width: 575px;
+    height: 200px;
+    background-color: #346eea;
+    color: white;
+    border: 1px solid #000;
+    padding: 10px;
+    /* z-index: 100; */
+    border-radius: 20px;
+  }
    @media(max-width:750px){
     .parte3 {
         width: 350px;
